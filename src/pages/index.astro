@@ -1,0 +1,53 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.hero {
+				margin-top: 2em;
+			}
+			.subtitle {
+				font-size: 1.1em;
+				margin-bottom: 2em;
+				color: var(--text-muted);
+			}
+			.bio {
+				margin-bottom: 3em;
+				font-size: 1.1em;
+			}
+			.link-block {
+				margin-top: 2em;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<h1>Mikko Pallas</h1>
+				<p class="subtitle">Data Engineer & Knowledge Management</p>
+				
+				<div class="bio">
+					<p>
+						I am currently focused on Data Engineering and Knowledge Management. Previously, I spent 10 years building applications in web development.
+					</p>
+					<p>
+						I created this space to write and share my short articles on data, technology, and continuous learning.
+					</p>
+				</div>
+
+				<div class="link-block">
+					<a href="/blog">Read my articles &rarr;</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
