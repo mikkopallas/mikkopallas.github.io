@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # AI Coding Assistant
 .antigravitycli/
+
+# VS Code
+.vscode/
